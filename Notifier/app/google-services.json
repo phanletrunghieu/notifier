@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "307190977413",
+    "firebase_url": "https://notifier-3a426.firebaseio.com",
+    "project_id": "notifier-3a426",
+    "storage_bucket": "notifier-3a426.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307190977413:android:b0ab9dfde96a3a74",
+        "android_client_info": {
+          "package_name": "com.hieudeptrai.notifier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307190977413-3l7e7giknvfhpch30d82j7u0eju98bam.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hieudeptrai.notifier",
+            "certificate_hash": "db9bd8377d05629c71397eb189695d8fed63a00c"
+          }
+        },
+        {
+          "client_id": "307190977413-869htsgbpl4c4vrp7e7taaelt8eibh2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjNnqaGBpE9KieckjIVCqVicNyEjG8R8c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307190977413-869htsgbpl4c4vrp7e7taaelt8eibh2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
