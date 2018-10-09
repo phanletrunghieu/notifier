@@ -17,6 +17,7 @@ import (
 	"github.com/phanletrunghieu/notifier/database/pg"
 	serviceHttp "github.com/phanletrunghieu/notifier/http"
 	"github.com/phanletrunghieu/notifier/service"
+	deviceSvc "github.com/phanletrunghieu/notifier/service/device"
 	userSvc "github.com/phanletrunghieu/notifier/service/user"
 )
 
@@ -56,7 +57,8 @@ func main() {
 	}
 
 	s := service.Service{
-		UserService: userSvc.NewPGService(pgDB),
+		UserService:   userSvc.NewPGService(pgDB),
+		DeviceService: deviceSvc.NewPGService(pgDB),
 	}
 
 	var h http.Handler

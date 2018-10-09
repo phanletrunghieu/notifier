@@ -1,4 +1,4 @@
-package user
+package device
 
 import (
 	"context"
@@ -9,29 +9,29 @@ import (
 	"github.com/phanletrunghieu/notifier/service"
 )
 
-// RequestCreateUser .
-type RequestCreateUser struct {
-	User domain.User `json:"user"`
+// RequestCreateDevice .
+type RequestCreateDevice struct {
+	Device domain.Device `json:"device"`
 }
 
-// ResponseCreateUser .
-type ResponseCreateUser struct {
-	User domain.User `json:"user"`
+// ResponseCreateDevice .
+type ResponseCreateDevice struct {
+	Device domain.Device `json:"device"`
 }
 
 // MakeCreateEndpoint .
 func MakeCreateEndpoint(s service.Service) endpoint.Endpoint {
 	return func(ctx context.Context, request interface{}) (interface{}, error) {
 		var (
-			req  = request.(RequestCreateUser)
-			user = &req.User
+			req    = request.(RequestCreateDevice)
+			device = &req.Device
 		)
 
-		err := s.UserService.Create(user)
+		err := s.DeviceService.Create(device)
 		if err != nil {
 			return nil, err
 		}
 
-		return ResponseCreateUser{User: *user}, nil
+		return ResponseCreateDevice{Device: *device}, nil
 	}
 }
